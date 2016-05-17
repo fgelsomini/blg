@@ -4,7 +4,7 @@
   "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp sass",
+    "postinstall": "gulp sass",
     "start": "node app.js"
   },
   "repository": {
