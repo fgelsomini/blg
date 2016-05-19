@@ -39,4 +39,5 @@ npm install
 bower install
 ```
 
-Finally, run `npm start` to run the Node application, and in a separate terminal window, navigate to the same folder and run `gulp` to start the real-time Sass compiler. It will re-run every time you save a Sass file.
+Finally, run `npm start` to run the Node application. The site should be accessible by visiting `http://localhost:3000`. In a separate terminal window, navigate to the same folder and run `gulp` to start the real-time Sass compiler. It will re-run every time you save a Sass file.
+
