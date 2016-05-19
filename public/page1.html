@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <div>
+            <img src="img/logo.png" alt="BLG">
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <div class="primary-top-menu-compact" data-responsive-toggle="primary-top-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title"></div>
+          </div>             
+          <ul id="primary-top-menu" class="dropdown menu vertical medium-horizontal menu-centered" data-dropdown-menu>
+            <li><a href="#">blg.com</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="primary-search row">
+        <div class="input-group">
+          <input class="input-group-field" type="text">       
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Search">
+          </div>          
+        </div> 
+        <select class="input-select show-for-large" name="" id="">
+          <option value="">Hello, John Doe</option>
+        </select>        
+      </div>
+    </div>
+
+    <div class="top-bar secondary-top-bar">
+      <div class="title-bar" data-responsive-toggle="secondary-top-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>   
+      <div class="row" id="secondary-top-menu">
+        <ul class="dropdown menu vertical medium-horizontal menu-centered" data-dropdown-menu>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Group Pages</a></li>
+          <li><a href="#">Tab 1</a></li>
+          <li><a href="#">Tab 2</a></li>
+          <li><a href="#">Tab 3</a></li>
+          <li><a href="#">Tab 4</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row small-uncollapse" id="breadcrumb-container">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="disabled">Section</li>
+          <li>
+            <span class="show-for-sr">Current: </span> Current Section
+          </li>
+        </ul>
+      </nav>          
+    </div>
+
+    <div class="row hero">
+      <div class="large-8 columns banner-container show-for-medium">
+        <div class="orbit" data-orbit data-auto-play="false">
+          <ul class="orbit-container">
+            <button class="orbit-previous"><span class="show-for-sr">Previous</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next</span>&#9654;&#xFE0E;</button>
+            <li class="is-active orbit-slide">
+              <img class="orbit-image" src="../img/banner1.png" alt="Test Image">
+              <figcaption class="orbit-caption">
+                <h3>Slide Title</h3>
+                <div class="orbit-caption-text">
+                  Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper.
+                </div>
+                <div class="orbit-more">More</div>
+              </figcaption>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="../img/banner2.png" alt="Test Image">
+              <figcaption class="orbit-caption">
+                <h3>Other Slide Title</h3>
+                <div class="orbit-caption-text">
+                  Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper.
+                </div>
+                <div class="orbit-more">More</div>                
+              </figcaption>
+            </li>
+          </ul>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          </nav>
+        </div>
+      </div>
+      <div class="large-4 columns leaders-corner-container end">
+        <div>
+          <div class="title">Leader's Corner</div>
+          <div class="caption">
+            <div class="caption-left float-left">
+              <img src="http://placehold.it/50x50" alt="">  
+            </div>
+            <div class="caption-right">
+              John Doe<br/>
+              Title</br>
+              May 15, 2016
+            </div>
+          </div>
+          <div class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam. Ut dictum fermentum felis, et sodales purus.            
+          </div>
+          <div class="footer">
+            <a href="">MORE</a>
+          </div>
+        </div>
+      </div>      
+    </div>    
+
+    <div class="row notice-container large-collapse">
+      <div class="large-12 columns">
+        <div class="callout alert" data-closable>
+          <div class="callout-left">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+          </div>
+          <div class="callout-right">
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>                      
+          </div>
+        </div>
+        <div class="callout warning" data-closable>
+          <div class="callout-left">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+          </div>
+          <div class="callout-right">
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="row">
+      <div class="large-4 columns">
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">Firm Wide News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>          
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>  
+        </div> 
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">External News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>          
+        </div>         
+      </div>
+
+      <div class="large-4 columns">
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">Local Office News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>          
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>  
+        </div>
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">Firm Wide News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>          
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>  
+        </div>         
+      </div>
+
+      <div class="large-4 columns">
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">Firm Wide News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+        </div>
+        <div class="mini-container">
+          <div class="header">
+            <div class="header-left">Firm Wide News</div>
+            <div class="header-right">More</div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>          
+          <div class="item">
+            <div class="content">
+              <p class="title">Widget Title</p>
+              <p class="body">
+                Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+              </p>            
+            </div>
+            <div class="footer">
+              May 5, 2016 | IT
+            </div>
+          </div>  
+        </div>         
+      </div>
+
+    </main>    
+
+    <div class="footer footer-primary">
+      <div class="row small-up-1 medium-up-2 large-up-4">
+        <div class="column">
+          <span class="title">Subjects</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>
+        </div>
+        <div class="column">
+          <span class="title">Popular Topics</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>          
+        </div>
+        <div class="column">
+          <span class="title">Title</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>          
+        </div>
+        <div class="column">
+          <span class="title">Social</span>
+          <ul class="content">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+          </p>
+        </div>        
+      </div>
+    </div>
+
+    <div class="footer footer-secondary">
+      <div class="row text-center">
+        Copyright &copy; 2016 Borden Ladner Gervais LLP  
+      </div>
+    </div>  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

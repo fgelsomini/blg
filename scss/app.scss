@@ -49,47 +49,280 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// General
+
+.row {
+  max-width: $global-row-width;
+}
+
+// Header and Navigation
+
 .top-bar {
+  background-color: $light-blue;
   padding-top: 15px;
   min-height: 150px;
-  .row {
-    max-width: 73rem;
-  }  
-  input {
-    max-width: 500px;
+  ul {
+    background-color: $light-blue;
   }
   .top-bar-right {
-    .menu {
-      font-size: 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 8px;
+    .dropdown {
+      a {
+        color: $black;  
+        padding: 0 5px;
+        border-right: 1px solid $black;
+      }
     }
+    .dropdown li:last-child a {
+      border: none;
+    }
+  }
+  input {
+    max-width: 100%;
+  }
+  .primary-top-menu-compact {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: $dark-gray;
+  }
+  .primary-search {
+    .input-group {
+      width: 60%;
+      margin-top: 15px;
+      float: left;
+      .input-group-field {
+        background-color: $light-blue;
+        border: 2px solid $white;
+      }
+      .input-group-button {
+        .button {
+          background-color: $white;
+          color: $black;
+          @include breakpoint(medium down) { 
+            margin-right: 0;
+          }          
+        }
+      }
+      @include breakpoint(medium down) { 
+        width: 100%;
+      }
+    }
+    .input-select {
+      float: left;
+      width: 40%;
+      margin-bottom: 0;
+      margin: 1rem 0;    
+      border: 1px solid $white; 
+      font-size: 0.9rem; 
+    }    
   }
 }
 
 .secondary-top-bar {
   margin-bottom: 20px;
-  min-height: 50px;  
-  background-color: $medium-gray;
-  padding: 10px;
+  min-height: 40px;  
+  background-color: $light-gray;
+  padding: 3px 3px 0 3px;
+  border-bottom: 3px solid $medium-gray;  
   .menu {
     @include menu-expand; 
-    background-color: $medium-gray;
+    background-color: $light-gray;
     li {
-      background-color: $light-gray;
-      border-right: 2px solid $medium-gray;
+      background-color: $light-blue;
+      border-right: 2px solid $light-gray;
+      a {
+        color: $medium-gray;
+      }
     }
-  }
-  #secondary-top-menu {
-    max-width: 73rem;
+    .active {
+      border-top: 3px solid $gold;
+      background-color: $medium-gray;
+      a {
+        background-color: $medium-gray;
+        color: $white;
+      }
+    }
+    @include breakpoint(medium down) {  
+      font-size: 0.8rem; 
+    }    
   }
 }
 
 .breadcrumbs {
   margin: 0 0 1rem 1rem;
+  a {
+    color: $dark-gray;
+  }
 }
 
-.callout {
+// Main content
+
+main {
+  margin-top: 20px;
+}
+
+.hero {
+  .columns {
+    @include breakpoint(large) {
+      min-height: 300px;  
+    }
+    @include breakpoint(medium down) {
+      min-height: 100px;
+      margin: 0.8rem;
+      width: initial;
+    }
+  }  
+  .banner-container {
+    padding-left: 0;
+    padding-right: 1.5rem;
+    @include breakpoint(medium down) {
+      width: 100%;
+      float: none; 
+    }
+    .orbit {
+      .orbit-next {
+        right: 50%;
+      }
+      .orbit-image {
+        max-height: 300px;
+      }
+      .orbit-caption {
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        font-size: 0.9rem;
+        @include breakpoint(medium only) {
+          font-size: 1rem;
+        }
+        .orbit-caption-text {
+          margin-top: 20px;
+        }
+        .orbit-more {
+          position: absolute;
+          bottom: 20px;
+          text-transform: uppercase;
+          font-size: 0.8rem;          
+        }
+      }
+      .orbit-bullets {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+      }
+    }
+  }
+  .leaders-corner-container {
+    background-color: $light-blue;
+    padding: 20px;
+    .title {
+      color: $blue;
+    }
+    .caption {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin: 15px 0;
+      .caption-left {
+        img {
+          border-radius: 50%;
+        }
+        margin-right: 10px;
+      }
+    }
+    .content {
+      font-size: 0.8rem;
+    }
+    .footer {
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+  }
+}
+
+.notice-container {
+  margin-top: 20px;
+  @include breakpoint(medium down) {
+    margin-top: 10px;
+  }
+  .callout {
+    padding: 7px;
+    color: $white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    .callout-left {
+      padding: 0 10px;
+      max-width: 97%;
+      @include breakpoint(medium down) {
+        max-width: 94%;
+      }
+    }
+    .close-button {
+      font-size: 2rem;
+      color: $white;
+      font-weight: normal;
+    }
+  }
+  .callout.alert {
+    background-color: $orange;
+  }
+  .callout.warning {
+    background-color: $yellow;
+    color: $black;
+  }  
+}
+
+.mini-container {
   font-size: 0.9rem;
   padding: 0;
+  margin-bottom: 25px;
+  .header {
+    background-color: $light-blue;
+    border-left: 5px solid $gold;
+    .header-left {
+      display: inline-block;
+      min-width: 55%;
+      padding: 7px 13px;
+      font-size: 1rem;
+      color: $blue;
+    }
+    .header-right {
+      display: inline-block;
+      text-align: right;
+      vertical-align: center;
+      width: 35%;
+      float: right;
+      padding: 9px 13px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }    
+  }
+  .item {
+    margin-bottom: 10px;
+    .content {
+      padding: 10px 10px 5px 10px;
+      .title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .body {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+      } 
+    }
+    .footer {
+      padding: 5px 10px;
+      font-size: 0.7rem;
+      color: $blue;
+    }
+  }
+}
+
+.item-container {
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 25px;
   .header {
     min-height: 20px;
     .header-left {
@@ -120,30 +353,43 @@
   }
 }
 
-.footer {
-  .row {
-    max-width: 73rem;
-  }
-}
-
-.footer-primary {
-  min-height: 140px;
-  padding: 20px;
-  background-color: $light-gray;
-  margin-top: 20px;
-}
-
-.footer-secondary {
-  min-height: 50px;
-  background-color: $primary-blue;
-  color: $white;
-  font-size: 0.8rem;
-  padding: 20px;
-}
-
 .placeholder-banner {
   border: 1px solid #666;
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
 }
+
+// Footers
+
+.footer-primary {
+  min-height: 140px;
+  padding: 30px 20px;
+  background-color: $medium-blue;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: $white;
+  .title {
+    font-weight: bold;
+  }
+  .content {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .column {
+    padding-right: 20px;
+  }
+  :last-child {
+    border: none;
+  }
+}
+
+.footer-secondary {
+  min-height: 50px;
+  background-color: $blue;
+  color: $white;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+

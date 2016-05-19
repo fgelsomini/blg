@@ -55,15 +55,21 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+$light-gray: #cecece;
+$medium-gray: #a4a4a4;
+$dark-gray: #3d3d3d;
+$light-blue: #e9edf2;
+$medium-blue: #a1b4c5;
+$dark-blue: #295077;
 $black: #0a0a0a;
 $white: #fefefe;
-$primary-blue: #152f41;
+$blue: #0b2265;
+$orange: #e93c00;
+$yellow: #ffc000;
+$gold: #ac892f;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Arial', Helvetica, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -73,6 +79,7 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
+$global-row-width: 61.5rem;
 
 @include add-foundation-colors;
 
@@ -535,7 +542,7 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $primary-blue;
+$titlebar-background: $medium-gray;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
