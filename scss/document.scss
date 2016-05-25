@@ -2,8 +2,22 @@
 
   .document-sidebar {
     padding-right: 0;
+    @include breakpoint(medium only) {
+      margin-right: 0.5rem;
+    }
+    @include breakpoint(small only) {
+      margin-right: 0.25rem;
+    }    
     .item {
       margin-bottom: 0;
+      .content {
+        border-bottom: 1px solid $light-blue;
+        padding-top: 20px;
+        .title {
+          margin-bottom: 20px;
+          color: $blue;
+        }
+      }
     }
     .body {
       ol, ul {
@@ -12,7 +26,7 @@
       .column {
         margin-bottom: 15px;
         img {
-          width: 40%;
+          width: 40px;
           border-radius: 50%;
         }
         figcaption {
@@ -82,14 +96,45 @@
     }
   }
 
+  .mini-container-a.key-contacts {
+    .column {
+      img {
+        width: 55px;
+      }
+      figcaption {
+        padding: 2px 15px;
+        font-size: 0.7rem;
+        .name {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mini-container-a.our-documents {
+    ul.no-bullet {
+      li {
+        line-height: 1.2;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
   .document-meta {
     margin: 1.5rem 0;
     padding-right: 1rem;
     .text {
       padding: 1.5rem 0;
-      font-size: 1.2rem;
+      .document-title {
+        font-size: 1.4rem; 
+        color: $blue;
+      }
+      .document-author, .document-publish-date {
+        font-size: 0.8rem;
+      }
     }
     .avatar {
+      padding-top: 10px;
       img {
         border-radius: 50%;
       }
