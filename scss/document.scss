@@ -2,6 +2,25 @@
 
   .document-sidebar {
     padding-right: 0;
+    .item {
+      margin-bottom: 0;
+    }
+    .body {
+      ol, ul {
+        line-height: 1.9;
+      }      
+      .column {
+        margin-bottom: 15px;
+        img {
+          width: 40%;
+          border-radius: 50%;
+        }
+        figcaption {
+          padding: 0.5rem;
+          float: left;
+        }        
+      }
+    }
   }
 
   .menu.actions {
