@@ -1,0 +1,308 @@
+// General
+
+.row {
+  max-width: $global-row-width;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.top-bar {
+  background-color: $light-blue;
+  padding-top: 15px;
+  min-height: 150px;
+  ul {
+    background-color: $light-blue;
+  }
+  .top-bar-right {
+    font-size: 0.8rem;
+    margin-top: 8px;
+    .dropdown {
+      a {
+        color: $black;  
+        padding: 0 5px;
+        border-right: 1px solid $black;
+      }
+    }
+    .dropdown li:last-child a {
+      border: none;
+    }
+  }
+  input {
+    max-width: 100%;
+  }
+  .primary-top-menu-compact {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: $dark-gray;
+  }
+  .primary-search {
+    .input-group {
+      width: 60%;
+      margin-top: 15px;
+      float: left;
+      .input-group-field {
+        background-color: $light-blue;
+        border: 2px solid $white;
+      }
+      .input-group-button {
+        .button {
+          background-color: $white;
+          color: $black;
+          @include breakpoint(medium down) { 
+            margin-right: 0;
+          }          
+        }
+      }
+      @include breakpoint(medium down) { 
+        width: 100%;
+      }
+    }
+    .input-select {
+      float: left;
+      width: 40%;
+      margin-bottom: 0;
+      margin: 1rem 0;    
+      border: 1px solid $white; 
+      font-size: 0.9rem; 
+    }    
+  }
+}
+
+.secondary-top-bar {
+  margin-bottom: 20px;
+  min-height: 40px;  
+  background-color: $light-gray;
+  padding: 3px 3px 0 3px;
+  border-bottom: 3px solid $medium-gray;  
+  .menu {
+    @include menu-expand; 
+    background-color: $light-gray;
+    li {
+      background-color: $light-blue;
+      border-right: 2px solid $light-gray;
+      a {
+        color: $medium-gray;
+      }
+    }
+    .active {
+      border-top: 3px solid $gold;
+      background-color: $medium-gray;
+      a {
+        background-color: $medium-gray;
+        color: $white;
+      }
+    }
+    @include breakpoint(medium down) {  
+      font-size: 0.8rem; 
+    }    
+  }
+}
+
+.breadcrumbs {
+  margin: 0 0 1rem 0;
+  li {
+    text-transform: initial;
+    a {
+      color: $medium-gray;
+    }    
+  }
+}
+
+.notice-container {
+  margin-top: 20px;
+  @include breakpoint(medium down) {
+    margin-top: 10px;
+  }
+  .callout {
+    padding: 7px;
+    color: $white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    .callout-left {
+      padding: 0 10px;
+      max-width: 97%;
+      @include breakpoint(medium down) {
+        max-width: 94%;
+      }
+    }
+    .close-button {
+      font-size: 2rem;
+      color: $white;
+      font-weight: normal;
+    }
+  }
+  .callout.alert {
+    background-color: $orange;
+  }
+  .callout.warning {
+    background-color: $yellow;
+    color: $black;
+  }  
+}
+
+.mini-container-a {
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 25px;
+  .mini-container-border {
+    border-left: 3px solid $light-blue;
+    border-right: 3px solid $light-blue;
+    border-bottom: 3px solid $light-blue;
+  }  
+  .header {
+    background-color: $light-blue;
+    border-left: 5px solid $gold;
+    .header-left {
+      display: inline-block;
+      min-width: 55%;
+      padding: 7px 13px;
+      font-size: 1rem;
+      color: $blue;
+    }
+    .header-right {
+      display: inline-block;
+      text-align: right;
+      vertical-align: center;
+      width: 35%;
+      float: right;
+      padding: 9px 13px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }    
+  }
+  .item {
+    margin-bottom: 10px;
+    .content {
+      padding: 10px 10px 5px 10px;
+      .title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .body {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+      } 
+    }
+    .footer {
+      padding: 5px 10px;
+      font-size: 0.7rem;
+      color: $blue;
+    }
+  }
+}
+
+.mini-container-b {
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 25px;
+  border: 3px solid $light-blue;
+  .header {
+    min-height: 20px;
+    .header-left {
+      display: inline-block;
+      min-width: 55%;
+      padding: 10px;
+    }
+    .header-right {
+      display: inline-block;
+      background-color: $light-blue;
+      text-align: center;
+      width: 43%;
+      float: right;
+      padding: 5px;
+      font-weight: bold;
+    }    
+  }
+  .content {
+    padding: 1rem;
+    .title {
+      font-weight: bold;
+      padding-bottom: 1rem;
+      color: $blue;
+    }    
+  }
+  .footer {
+    background-color: $light-blue;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    a {
+      color: $dark-blue;  
+    }
+    .download-link {
+      padding: 0 1.5rem 0 0;
+    }
+    .open-link {
+      padding: 0;
+    }
+    .favorite-link {
+      float: right;
+      i {
+        font-size: 0.8rem;
+        opacity: 0.4;
+      }
+    }
+    .favorite-link.added {
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-top: 10px;
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+  .pagination-previous, .pagination-next {
+    background-color: $light-blue;
+  }
+  a {
+    color: $medium-blue;
+  }
+  .current {
+    background-color: $medium-blue;
+  }
+}
+
+.content-meta {
+  font-size: 0.7rem;
+  color: $dark-blue;
+  padding: 1rem 0 0.7rem 0;
+  border-bottom: 1px solid $light-blue;
+}
+
+.footer-primary {
+  min-height: 140px;
+  padding: 30px 20px;
+  background-color: $medium-blue;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: $white;
+  .title {
+    font-weight: bold;
+  }
+  .content {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .column {
+    padding-right: 20px;
+  }
+  :last-child {
+    border: none;
+  }
+}
+
+.footer-secondary {
+  min-height: 50px;
+  background-color: $blue;
+  color: $white;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+

@@ -1,0 +1,105 @@
+.landing-container {
+
+  .banner-box-container {
+    min-height: 300px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 300px;
+    }
+    figcaption {
+      position: absolute;
+      top: 0;
+      width: 91%;
+      padding: 1rem;
+      color: $white;
+      background-color: rgba($black,0.5);
+      @include breakpoint(medium only) {
+        width: 93%;
+      }
+      @include breakpoint(small only) {
+        width: 100%;
+      }      
+    }
+  }
+
+  .leader-container {
+    background-color: $medium-blue;
+    padding: 20px;
+    min-height: 300px;
+    .caption {
+      color: $blue;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin: 0 0 10px 0;
+      font-weight: bold;
+      .caption-left {
+        img {
+          max-width: 60px;
+          border-radius: 50%;
+          border: 1px solid $light-gray;
+        }
+        margin-right: 15px;
+      }
+      .caption-right {
+        padding-top: 5px;
+      }
+    }
+    .content {
+      font-size: 0.8rem;
+    }
+    .footer {
+      font-size: 0.8rem;
+      margin-top: 20px;
+      a { 
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .insights-container {
+    background-color: $light-blue;
+    padding: 1rem;
+    font-size: 0.8rem;
+    min-height: 300px;
+    h5 {
+      font-weight: bold;
+      font-size: 1rem;
+      color: $dark-blue;
+      padding-top: 0.2rem;
+    }
+    .insight {
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid $medium-blue;
+      .insight-left {
+        text-align: center;
+        line-height: 1;
+        font-size: 1rem;
+        padding: 1rem 0;
+        .month {
+          font-size: 1.2rem;
+        }
+        .stat {
+          font-size: 2.0rem;
+        }
+      }
+      .insight-right {
+        padding: 0.5rem 1rem;
+        width: 80%;
+      }
+    }
+    .insight:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .main-content {
+    margin-top: 20px;
+  }
+
+  .banner-box-summary {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+}
