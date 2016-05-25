@@ -1,4 +1,4 @@
-# Foundation for Sites Template
+# Foundation for Sites BLG Template
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
@@ -21,20 +21,14 @@ Install the Foundation CLI with this command:
 npm install foundation-cli --global
 ```
 
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
 ### Manual Setup
 
-To manually set up the template, first download it with Git:
+To manually set up the template, first download it with Git (this will create a folder called blg):
 
 ```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
+git clone https://github.com/fgelsomini/blg
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
@@ -45,4 +39,5 @@ npm install
 bower install
 ```
 
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+Finally, run `npm start` to run the Node application. The site should be accessible by visiting `http://localhost:3000`. In a separate terminal window, navigate to the same folder and run `gulp` to start the real-time Sass compiler. It will re-run every time you save a Sass file.
+
