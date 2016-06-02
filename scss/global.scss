@@ -46,15 +46,68 @@
       .input-group-field {
         background-color: $light-blue;
         border: 2px solid $white;
+        border-right: none;
+      }
+      .input-group-label {
+        padding: 0;
+        border: none;
+        .button {
+          margin: 0;
+          background-color: $light-blue;
+          color: orange;
+          border: 2px solid white;
+          border-left: none;
+          padding: 0.76em 1em;
+        }
       }
       .input-group-button {
+        width: 150px;
+        ul {
+          background-color: $white;
+          border: 2px solid $white;
+          font-size: 0.8rem;
+          a, a::after {
+            color: $black;
+            border-color: $black transparent transparent;
+          }
+          a {
+            padding: 0.75rem 2rem;
+          }
+        }
+        .is-dropdown-submenu {
+          left: -4px;
+          min-width: 152px;
+          li {
+            border-top: 1px solid $gray;
+            padding: 0;
+            a {
+              text-align: left;
+            }
+          }
+        }
+        select {
+          margin: 0;
+          border: 1px solid $white;
+          height: 40px;
+          option {
+            background-color: $white;
+          }
+        }
         .button {
           background-color: $white;
           color: $black;
+          width: 100%;
+          margin: 0;
           @include breakpoint(medium down) { 
             margin-right: 0;
-          }          
+          }
+          i {
+            margin-left: 10px;
+          }
         }
+      }
+      .input-group-button.search-button {
+        width: 20px;
       }
       @include breakpoint(medium down) { 
         width: 100%;
@@ -67,7 +120,15 @@
       margin: 1rem 0;    
       border: 1px solid $white; 
       font-size: 0.9rem; 
-    }    
+    } 
+    .avatar {
+      float: right;
+      margin: 10px 5px;      
+      img {
+        width: 50px; 
+        margin-left: 20px; 
+      }
+    }   
   }
 }
 
@@ -356,5 +417,9 @@
   color: $white;
   font-size: 0.8rem;
   padding: 20px;
+}
+
+.round-mask {
+  border-radius: 50%;
 }
 
