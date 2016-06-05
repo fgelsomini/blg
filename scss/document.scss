@@ -98,6 +98,9 @@
 
   .mini-container-a.key-contacts {
     .column {
+      a {
+        color: $blue;
+      }         
       img {
         width: 55px;
       }
