@@ -30,14 +30,25 @@
       </div>
       <div class="primary-search row">
         <div class="input-group">
-          <input class="input-group-field" type="text">       
+          <input class="input-group-field" type="text" placeholder="Search">
+          <span class="input-group-label"><i class="fi-magnifying-glass button"></i></span>
           <div class="input-group-button">
-            <input type="submit" class="button" value="Search">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="#">Content</a>
+                <ul class="menu">
+                  <li><a href="#">All</a></li>    
+                  <li><a href="#">People</a></li>    
+                  <li><a href="#">DM</a></li>
+                  <li><a href="#">Text</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>          
         </div> 
-        <select class="input-select show-for-large" name="" id="">
-          <option value="">Hello, John Doe</option>
-        </select>        
+        <div class="avatar show-for-large">
+          Hello <strong>John Doe!</strong> <img src="img/face.png" class="round-mask" alt="">                
+        </div>
       </div>
     </div>
 
@@ -252,45 +263,61 @@
             </div>
           </div>
 
-          <div class="mini-container-a">
+          <div class="mini-container-a our-documents">
             <div class="header">
-              <div class="header-left">Firm Wide News</div>
-              <div class="header-right">More</div>
+              <div class="header-left">Our Documents</div>
             </div>
             <div class="mini-container-border">
               <div class="item">
                 <div class="content">
-                  <div class="title">Widget Title</div>
+                  <div class="title">Most Recent</div>
                   <div class="body">
-                    Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
+                    <ul class="no-bullet">
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>                    
+                    </ul>                  
                   </div>            
-                </div>
-                <div class="footer">
-                  May 5, 2016 | IT
-                </div>
-              </div>
-              <div class="item">
-                <div class="content">
-                  <div class="title">Widget Title</div>
-                  <div class="body">
-                    Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
-                  </div>            
-                </div>
-                <div class="footer">
-                  May 5, 2016 | IT
-                </div>
-              </div>          
-              <div class="item">
-                <div class="content">
-                  <div class="title">Widget Title</div>
-                  <div class="body">
-                    Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.
-                  </div>            
-                </div>
-                <div class="footer">
-                  May 5, 2016 | IT
                 </div>
               </div> 
+              <div class="item">
+                <div class="content">
+                  <div class="title">Most Popular</div>
+                  <div class="body">
+                    <ul class="no-bullet">
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>
+                      <li>
+                        Document name or description<br/>
+                        Apr 27, 2016 | PDF
+                      </li>                    
+                    </ul>                  
+                  </div>            
+                </div>
+              </div>                     
             </div>
           </div>  
 
@@ -373,7 +400,7 @@
       </div>  
 
       <div class="row">
-        <div class="content-meta">Page contact: First & Last Name | email@example.com</div>
+        <div class="column content-meta">Page contact: <a href="">First & Last Name</a></div>
       </div> 
 
     </div>
