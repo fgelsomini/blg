@@ -141,7 +141,7 @@
   .menu {
     @include menu-expand; 
     background-color: $light-gray;
-    li {
+    li {     
       background-color: $light-blue;
       border-right: 2px solid $light-gray;
       a {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events Page</title>
+    <title>Search Page</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -83,36 +83,60 @@
     </div>
 
     <div class="row small-uncollapse large-collapse tabs-container">
-      <ul class="tabs tabs-filters" data-tabs id="example-tabs">
-        <li class="tabs-title"><a href="#panel-all" aria-selected="true">All</a></li>
-        <li class="tabs-title"><a href="#panel-national">National</a></li>
-        <li class="tabs-title is-active"><a href="#panel-department">Department</a></li>
-        <li class="tabs-title"><a href="#panel-other">Other</a></li>
+      <ul class="tabs tabs-filters" data-tabs id="filter-tabs">
+        <li class="tabs-title visible"><a href="#panel-all" aria-selected="true">All</a></li>
+        <li class="tabs-title visible"><a href="#panel-national">National</a></li>
+        <li class="tabs-title visible"><a href="#panel-department">Department</a></li>
+        <li class="tabs-title visible"><a href="#panel-other">Other</a></li>
+        <li class="tabs-title invisible" id="hidden-close-all-tab"><a href="#close-all"></a></li>
       </ul>
-      <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-content" data-tabs-content="filter-tabs">
         <div class="tabs-panel" id="panel-all">
-          <ul class="dropdown menu vertical medium-horizontal menu-centered sub-tabs-panel" data-dropdown-menu>
+          <ul class="dropdown menu vertical medium-horizontal sub-tabs-panel" data-dropdown-menu>
             <li><a href="#">All Link 1</a></li>
             <li><a href="#">All Link 2</a></li>
             <li><a href="#">All Link 3</a></li>
           </ul>
         </div>
         <div class="tabs-panel" id="panel-national">
-          <ul class="dropdown menu vertical medium-horizontal menu-centered sub-tabs-panel" data-dropdown-menu>
+          <ul class="dropdown menu vertical medium-horizontal sub-tabs-panel" data-dropdown-menu>
             <li><a href="#">National Link 1</a></li>
             <li><a href="#">National Link 2</a></li>
             <li><a href="#">National Link 3</a></li>
           </ul>
         </div>
-        <div class="tabs-panel is-active" id="panel-department">
-          <ul class="dropdown menu vertical medium-horizontal menu-centered sub-tabs-panel" data-dropdown-menu>
-            <li><a href="#">Dept Link 1</a></li>
-            <li><a href="#">Dept Link 2</a></li>
-            <li><a href="#">Dept Link 3</a></li>
+        <div class="tabs-panel" id="panel-department">
+          <ul class="dropdown menu vertical medium-horizontal sub-tabs-panel" data-dropdown-menu>
+            <li><a href="#">Aboriginal Law</a></li>
+            <li><a href="#">Banking and Financial Services</a></li>
+            <li><a href="#">Business and Corporate Commercial</a></li>
+            <li><a href="#">Commercial Real Estate</a></li>
+            <li><a href="#">Competition and Foreign Investment Review</a></li>
+            <li><a href="#">Corporate Commercial Litigation and Arbitration</a></li>
+            <li><a href="#">Construction</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">Environmental</a></li>
+            <li><a href="#">Family Wealth Counsel</a></li>
+            <li><a href="#">Health Law</a></li>
+            <li><a href="#">Insurance and Tort Liability</a></li>
+            <li><a href="#">International</a></li>
+            <li><a href="#">Labour and Employment</a></li>
+            <li><a href="#">Privacy and Data Security</a></li>
+            <li><a href="#">Tax</a></li>
+            <li><a href="#">Mergers and Aquisitions</a></li>     
+            <li><a href="#">Health Law</a></li>
+            <li><a href="#">Insurance and Tort Liability</a></li>
+            <li><a href="#">International Department With a Very Long Name</a></li>
+            <li class="active"><a href="#">Policy and Procedures</a></li>
+            <li><a href="#">Privacy and Data Security</a></li>
+            <li><a href="#">Tax</a></li>
+            <li><a href="#">Mergers and Aquisitions</a></li>   
+            <li><a href="#">Commercial Real Estate</a></li>                               
           </ul>
         </div>
         <div class="tabs-panel" id="panel-other">
-          <ul class="dropdown menu vertical medium-horizontal menu-centered sub-tabs-panel" data-dropdown-menu>
+          <ul class="dropdown menu vertical medium-horizontal sub-tabs-panel" data-dropdown-menu>
             <li><a href="#">Other Link 1</a></li>
             <li><a href="#">Other Link 2</a></li>
             <li><a href="#">Other Link 3</a></li>
@@ -121,7 +145,7 @@
       </div>
     </div>
 
-    <div class="row small-up-1 medium-up-2 large-up-3 event-list-container main-content">
+    <div class="row small-up-1 medium-up-2 large-up-3 search-list-container main-content">
       <div class="column search-result-item">
         <div class="mini-container-b">
           <div class="header">Human Resources</div>
