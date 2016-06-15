@@ -120,3 +120,59 @@
     }
   }
 }
+
+.event-meta {
+  padding-right: 0 !important;
+  @include breakpoint(medium down) {
+    padding: 0 20px;
+    margin: 0 !important;
+  }
+  .event-item-banner {
+    margin-bottom: 1.5rem;
+    @include breakpoint(medium down) {
+      img {
+        max-width: 95%;
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+    .event-title {
+      max-width: 95%;
+    }
+  }  
+}
+
+
+.event-extra {
+  margin: 20px 0 40px 0;
+  @include breakpoint(medium down) {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+  }
+  .event-details {
+    @include breakpoint(large) {
+      padding-left: 0;
+    }
+    @include breakpoint(small) {
+      margin-bottom: 40px;
+    }    
+    .event-date {
+      font-size: 1.2rem;
+      color: $blue;
+      font-weight: bold;
+    }
+    .event-time {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .event-contact {
+    .event-contact-title {
+      font-size: 1.2rem;
+      color: $blue;
+      font-weight: bold;   
+      margin-bottom: 0.5rem; 
+    }
+  }
+}
+
