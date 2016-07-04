@@ -1,0 +1,78 @@
+.phone-book-container {
+  .search-meta-container {
+    .blank label {
+      background-color: $white;
+    }
+    label {
+      margin: 0 2px;
+    }
+    label:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .search-filter-container {
+    margin-bottom: 20px;
+  }
+  .phone-book {
+    border: 2px solid $gray;
+    .content {
+      .photo {
+        padding-left: 10px;
+      }
+      img.round-mask {
+        width: 100px;
+      }
+      .info {
+        line-height: 1.35;
+        .title {
+          margin-bottom: 10px;
+        }
+        .name {
+          font-weight: bold;
+           color: $blue;
+        }
+      }
+    }
+    .tabs-container {
+      ul {
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+        height: 1.9rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 175px;
+      }
+      li {
+        width: 25%;
+        background-color: $white;
+      }
+      .tabs-title {
+        a {
+          padding-left: 0;
+        }
+      }
+      .tabs-title.is-active {
+        a {
+          background-color: $white;
+          span {
+            border-bottom: 3px solid $light-blue;
+          }
+        }
+      }
+      .tabs-content {
+        border-bottom: none;
+        max-height: initial;
+        background-color: $white;
+        padding-left: 175px;
+      }
+      .tabs-panel {
+        background-color: $white;
+        border: none;
+        box-shadow: none;
+        section {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

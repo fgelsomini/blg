@@ -1,0 +1,238 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book Page</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <div>
+            <img src="img/logo.png" alt="BLG">
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <div class="primary-top-menu-compact" data-responsive-toggle="primary-top-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+            <div class="title-bar-title"></div>
+          </div>             
+          <ul id="primary-top-menu" class="dropdown menu vertical medium-horizontal menu-centered" data-dropdown-menu>
+            <li><a href="#">blg.com</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="primary-search row">
+        <div class="input-group">
+          <input class="input-group-field" type="text" placeholder="Search">
+          <span class="input-group-label"><i class="fi-magnifying-glass button"></i></span>
+          <div class="input-group-button">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="#">Content</a>
+                <ul class="menu">
+                  <li><a href="#">All</a></li>    
+                  <li><a href="#">People</a></li>    
+                  <li><a href="#">DM</a></li>
+                  <li><a href="#">Text</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>          
+        </div> 
+        <div class="avatar show-for-large">
+          Hello <strong>John Doe!</strong> <img src="img/face.png" class="round-mask" alt="">                
+        </div>
+      </div>
+    </div>
+
+    <div class="top-bar secondary-top-bar">
+      <div class="title-bar" data-responsive-toggle="secondary-top-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+      </div>   
+      <div class="row" id="secondary-top-menu">
+        <ul class="dropdown menu vertical medium-horizontal menu-centered" data-dropdown-menu>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Group Pages</a></li>
+          <li><a href="#">Tab 1</a></li>
+          <li><a href="#">Tab 2</a></li>
+          <li><a href="#">Tab 3</a></li>
+          <li><a href="#">Tab 4</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row small-uncollapse" id="breadcrumb-container">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="disabled">Section</li>
+          <li>
+            <span class="show-for-sr">Current: </span> Current Section
+          </li>
+        </ul>
+      </nav>          
+    </div>
+
+    <div class="search-results-container phone-book-container">
+
+      <div class="row large-collapse">
+        <div class="large-12 columns">
+          <div class="banner-full-container">
+            <div class="banner-full-overlay">
+              <span class="banner-full-overlay-text">Phone Book</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="clearfix">
+      <form action="">
+        <div class="row small-uncollapse large-collapse search-form-container">
+          <div class="large-1 columns"><label class="middle">Search</label></div>
+          <div class="large-11 columns"><input type="text" class=""></div>
+        </div>
+        <div class="row small-uncollapse large-collapse search-form-container search-filter-container">
+          <div class="large-1 columns"><label class="middle">List By:</label></div>
+          <fieldset class="large-11 columns">
+            <input type="radio" class=""><label>Last Name</label><input type="radio" class=""><label>First Name</label>
+            <span class="alphabet">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>
+          </fieldset>
+        </div>        
+      </form>
+      </div>
+        
+      <div class="row">
+        <ul class="breadcrumbs">
+          <li><a href="#">< Back to search results</a></li>
+        </ul>
+      </div>        
+
+      <div class="row">
+        <div class="large-12 columns phone-book">
+          <div class="row small-uncollapse large-collapse">
+
+            <div class="row small-uncollapse large-collapse search-meta-container">
+              <div class="large-9 columns blank"><label></label></div>
+              <div class="large-1 columns"><label class="middle text-center">vCard</label></div>
+              <div class="large-1 columns"><label class="middle text-center">Print</label></div>
+              <div class="large-1 columns"><label class="middle text-center">Email</label></div>
+              </div>
+            </div>             
+
+            <div>
+              <div class="content row collapse">
+                <div class="large-2 columns photo">
+                  <img src="img/face.png" alt="" class="round-mask">
+                </div>
+                <div class="large-10 columns info">
+                  <div class="name">Duncan Marsden</div>
+                  <div class="title">Partner</div>
+                  <div class="dept">Department: Labour and Employment Group</div>
+                  <div class="primary-group">Main Practice Group: Health Law</div>
+                  <div class="secondary-group">Adminstrative Group: N/A</div>
+                </div>               
+              </div>
+            </div>
+
+            <div class="row small-uncollapse large-collapse tabs-container">
+              <div class="large-12 columns">
+                <ul class="tabs tabs-phone-book" data-tabs id="phone-book-tabs">
+                  <li class="tabs-title visible is-active"><a href="#panel-all" aria-selected="true"><span>Profile</span></a></li>
+                  <li class="tabs-title visible"><a href="#panel-national">About Me</a></li>
+                  <li class="tabs-title visible"><a href="#panel-department">Placeholder</a></li>
+                  <li class="tabs-title visible"><a href="#panel-other">Professional(s)</a></li>
+                  <li class="tabs-title invisible" id="hidden-close-all-tab"><a href="#close-all"></a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="phone-book-tabs">
+                  <div class="tabs-panel is-active" id="panel-all">
+                    <section>
+                      <span><strong>Location</strong></span><br/>
+                      <span>Role | Office</span><br/>
+                      <span>123.456.7890</span>
+                      <span>Role | Office</span><br/>
+                      <span>123.456.7890</span>                      
+                    </section>
+                    <section>
+                      <span>First & Last Name</span><br/>
+                    </section>
+                   <section>
+                      <span><strong>Location</strong></span><br/>
+                      <span>Role | Office</span><br/>
+                      <span>123.456.7890</span>
+                    </section>                    
+                  </div>
+                  <div class="tabs-panel" id="panel-national">
+                    About Me
+                  </div>
+                  <div class="tabs-panel" id="panel-department">
+                    Placeholder
+                  </div>
+                  <div class="tabs-panel" id="panel-other">
+                    Professional(s)
+                  </div>        
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> 
+
+    </div>
+
+    <div class="footer footer-primary">
+      <div class="row small-up-1 medium-up-2 large-up-4">
+        <div class="column">
+          <span class="title">Subjects</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>
+        </div>
+        <div class="column">
+          <span class="title">Popular Topics</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>          
+        </div>
+        <div class="column">
+          <span class="title">Title</span>
+          <p class="content">
+            Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate, augue libero elementum urna, ut viverra turpis libero quis quam.            
+          </p>          
+        </div>
+        <div class="column">
+          <span class="title">Social</span>
+          <ul class="content">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+          </p>
+        </div>        
+      </div>
+    </div>
+
+    <div class="footer footer-secondary">
+      <div class="row text-center">
+        Copyright &copy; 2016 Borden Ladner Gervais LLP  
+      </div>
+    </div>  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

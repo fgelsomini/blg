@@ -40,7 +40,13 @@
         margin-top: 5px;
         margin-right: 30px;
         color: $medium-gray;
-      }      
+      }
+      .alphabet {
+        padding-left: 40px;
+        font-size: 12px;
+        color: $medium-gray;
+        word-spacing: 10px;
+      }   
     }
   }
   .sidebar {
