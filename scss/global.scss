@@ -435,9 +435,15 @@
   padding: 20px;
 }
 
+.image-container {
+  width: 75px;
+  height: 75px;
+}
+
 .round-mask {
   border-radius: 50%;
-}
+  overflow: hidden;
+}  
 
 .mini-container-33 {
   width: 33% !important;
