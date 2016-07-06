@@ -13,7 +13,7 @@
       <div class="row">
         <div class="top-bar-left">
           <div>
-            <img src="img/logo.png" alt="BLG">
+            <a href="/"><img src="img/logo.png" alt="BLG"></a>
           </div>
         </div>
         <div class="top-bar-right">
@@ -102,7 +102,7 @@
         </div>
         <div class="row small-uncollapse large-collapse search-form-container search-filter-container">
           <div class="large-1 columns"><label class="middle">Content</label></div>
-          <fieldset class="large-11 columns"><input type="radio" class=""><label>All</label><input type="radio" class=""><label>People</label></fieldset>
+          <fieldset class="large-11 columns"><input type="radio" name="scope" class="" checked="checked"><label>All</label><input type="radio" name="scope" class=""><label>People</label></fieldset>
         </div>        
       </form>
 
@@ -113,7 +113,19 @@
           <div class="row small-uncollapse large-collapse">
 
             <div class="row small-uncollapse large-collapse search-meta-container">
-              <div class="large-3 columns"><label class="middle">Sort</label></div>
+              <div class="large-3 columns">
+                <ul class="dropdown menu menu-sort" data-dropdown-menu>
+                  <li>
+                    <a href="#">Sort</a>
+                    <ul class="menu">
+                      <li><a href="#">Last Name | A-Z</a></li>    
+                      <li><a href="#">Last Name | Z-A</a></li>    
+                      <li><a href="#">First Name | A-Z</a></li>    
+                      <li><a href="#">First Name | Z-A</a></li>
+                    </ul>
+                  </li>
+                </ul>                
+              </div>
               <div class="large-7 columns"><label class="middle text-right">57 Results</label></div>
               <div class="large-2 columns"><label class="middle text-center">Print</label></div>
             </div>             
@@ -121,7 +133,7 @@
             <div class="mini-container-b people-result">
               <div class="content row">
                 <div class="large-2 columns">
-                  <img src="img/face.png" alt="" class="round-mask">
+                  <img src="http://placehold.it/90x90" alt="" class="round-mask">
                 </div>
                 <div class="large-5 columns primary">
                   <div class="name"><span class="highlight">Duncan</span> Marsden</div>
@@ -131,7 +143,7 @@
                   <div class="email">test@test.com</div>
                 </div>
                 <div class="large-5 columns secondary">
-                  <div class="name">Alison Smith</div>
+                  <div class="name">Marie-Claude Lassiseraye Mathieu</div>
                   <div class="title">Assistant</div>
                   <div class="contact">Calgary | 403.123.3456 | Ext. 47664</div>
                   <div class="email">test@test.com</div>                
@@ -142,15 +154,14 @@
             <div class="mini-container-b">
               <div class="content row">
                 <div class="large-2 columns">
-                  <img src="http://placehold.it/70x70" alt="" class="round-mask">
+                  <img src="http://placehold.it/90x90" alt="" class="round-mask">
                 </div>
                 <div class="large-10 columns">
                   <div class="title">Quite <span class="highlight">Duncan</span> Item Title Spanning Over Multiple Lines Lorem Ipsum Delta Alpha</div>
                   <div class="body">
                     Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate.
                   </div>
-                  <div class="date">Author(s): Duncan Marsden | May 15, 2016</div>
-                  <div class="moderator date">Content Moderator(s): First Last</div>                  
+                  <div class="date">Policy | Finance | July 4, 2016</div>
                 </div>
               </div>
             </div>
@@ -158,15 +169,14 @@
             <div class="mini-container-b">
               <div class="content row">
                 <div class="large-2 columns">
-                  <img src="http://placehold.it/70x70" alt="" class="round-mask">
+                  <img src="http://placehold.it/90x90" alt="" class="round-mask">
                 </div>
                 <div class="large-10 columns">
                   <div class="title">Quite Long Item Title Spanning Over Multiple Lines Lorem Ipsum Delta Alpha</div>
                   <div class="body">
                     Ut dictum fermentum felis, et sodales purus. Quisque <span class="highlight">duncan</span> eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate.
                   </div>
-                  <div class="date">Author(s): Duncan Marsden | May 15, 2016</div>
-                  <div class="moderator date">Content Moderator(s): First Last</div>                  
+                  <div class="date">Policy | Finance | July 4, 2016</div>
                 </div>
               </div>
             </div>
@@ -174,15 +184,14 @@
             <div class="mini-container-b">
               <div class="content row">
                 <div class="large-2 columns">
-                  <img src="http://placehold.it/70x70" alt="" class="round-mask">
+                  <img src="http://placehold.it/90x90" alt="" class="round-mask">
                 </div>
                 <div class="large-10 columns">
                   <div class="title">Quite Long Item Title Spanning Over Multiple Lines Lorem Ipsum Delta Alpha</div>
                   <div class="body">
                     Ut dictum fermentum felis, et sodales purus. Quisque malesuada eget elit non ullamcorper. Praesent feugiat, neque id vulputate vulputate.
                   </div>
-                  <div class="date">Author(s): <span class="highlight">Duncan</span> Marsden | May 15, 2016</div>
-                  <div class="moderator date">Content Moderator(s): First Last</div>                  
+                  <div class="date">Policy | Finance | July 4, 2016</div>
                 </div>
               </div>
             </div>
@@ -192,7 +201,7 @@
 
         <div class="large-4 columns sidebar"> 
 
-          <ul class="accordion" data-accordion>
+          <ul class="accordion" data-accordion data-multi-expand="true">
             <li class="accordion-item" data-accordion-item>
               <a class="accordion-title accordion-header">Refine Results</a>
               <div class="accordion-content" data-tab-content>

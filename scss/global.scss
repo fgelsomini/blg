@@ -71,7 +71,9 @@
             border-color: $black transparent transparent;
           }
           a {
-            padding: 0.75rem 2rem;
+            width: 140px;
+            text-align: left;            
+            padding: 0.75rem 1rem;
           }
         }
         .is-dropdown-submenu {
@@ -85,6 +87,10 @@
             }
           }
         }
+        li.is-dropdown-submenu-parent.opens-right > a::before {
+          content: "+";
+          float: right;
+        }        
         select {
           margin: 0;
           border: 1px solid $white;

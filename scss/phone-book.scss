@@ -11,7 +11,7 @@
     }
   }
   .search-filter-container {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
   .phone-book {
     border: 2px solid $gray;
@@ -34,17 +34,26 @@
       }
     }
     .tabs-container {
+      margin-top: 50px;
+      margin-bottom: 0;
+      .phone-book-tabs-container {
+        border-right: 1px solid $gray;
+        min-height: 550px;
+      }
       ul {
         border-top: 1px solid $gray;
         border-bottom: 1px solid $gray;
         height: 1.9rem;
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 20px;
         padding-left: 175px;
       }
       li {
-        width: 25%;
+        width: 33%;
         background-color: $white;
+      }
+      .location {
+        color: $gold;
       }
       .tabs-title {
         a {
@@ -70,7 +79,40 @@
         border: none;
         box-shadow: none;
         section {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
+          line-height: 1.4;
+          font-size: 0.9rem;          
+        }
+        .locations {
+          padding-left: 0;
+          section {
+            padding: 10px 10px 10px 0;
+            margin: 0 0 10px 0;
+            float: left;
+            min-width: 150px;
+          }
+        }
+      }
+      .professionals {
+        .tabs-panel-permanent {
+          background-color: $light-blue;
+          border-top: 1px solid $gray;
+          border-bottom: 1px solid $gray;
+          height: 1.9rem;
+          font-size: 0.75rem;
+          font-weight: bold; 
+          color: $dark-blue;   
+          padding: 0.5em 0.7em;    
+        }
+        .content {
+          padding: 1.8rem 1rem;
+          font-size: 0.9rem;
+          .professional {
+            margin-bottom: 20px;
+            .name {
+              font-weight: bold;
+            }            
+          }
         }
       }
     }

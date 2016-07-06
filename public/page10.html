@@ -13,7 +13,7 @@
       <div class="row">
         <div class="top-bar-left">
           <div>
-            <img src="img/logo.png" alt="BLG">
+            <a href="/"><img src="img/logo.png" alt="BLG"></a>
           </div>
         </div>
         <div class="top-bar-right">
@@ -96,19 +96,19 @@
       </div>
       
       <div class="clearfix">
-      <form action="">
-        <div class="row small-uncollapse large-collapse search-form-container">
-          <div class="large-1 columns"><label class="middle">Search</label></div>
-          <div class="large-11 columns"><input type="text" class=""></div>
-        </div>
-        <div class="row small-uncollapse large-collapse search-form-container search-filter-container">
-          <div class="large-1 columns"><label class="middle">List By:</label></div>
-          <fieldset class="large-11 columns">
-            <input type="radio" class=""><label>Last Name</label><input type="radio" class=""><label>First Name</label>
-            <span class="alphabet">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>
-          </fieldset>
-        </div>        
-      </form>
+        <form action="">
+          <div class="row small-uncollapse large-collapse search-form-container">
+            <div class="large-1 columns"><label class="middle">Search</label></div>
+            <div class="large-11 columns"><input type="text" class=""></div>
+          </div>
+          <div class="row small-uncollapse large-collapse search-form-container search-filter-container">
+            <div class="large-1 columns"><label class="middle">List By:</label></div>
+            <fieldset class="large-11 columns">
+              <input type="radio" name="scope" class="" checked="checked"><label>Last Name</label><input type="radio" name="scope" class=""><label>First Name</label>
+              <span class="alphabet">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>
+            </fieldset>
+          </div>        
+        </form>
       </div>
         
       <div class="row">
@@ -122,7 +122,8 @@
           <div class="row small-uncollapse large-collapse">
 
             <div class="row small-uncollapse large-collapse search-meta-container">
-              <div class="large-9 columns blank"><label></label></div>
+              <div class="large-7 columns blank"><label></label></div>
+              <div class="large-2 columns"><label class="middle text-center">BLG Bio</label></div>
               <div class="large-1 columns"><label class="middle text-center">vCard</label></div>
               <div class="large-1 columns"><label class="middle text-center">Print</label></div>
               <div class="large-1 columns"><label class="middle text-center">Email</label></div>
@@ -145,41 +146,93 @@
             </div>
 
             <div class="row small-uncollapse large-collapse tabs-container">
-              <div class="large-12 columns">
+              <div class="large-8 columns phone-book-tabs-container">
                 <ul class="tabs tabs-phone-book" data-tabs id="phone-book-tabs">
                   <li class="tabs-title visible is-active"><a href="#panel-all" aria-selected="true"><span>Profile</span></a></li>
                   <li class="tabs-title visible"><a href="#panel-national">About Me</a></li>
                   <li class="tabs-title visible"><a href="#panel-department">Placeholder</a></li>
-                  <li class="tabs-title visible"><a href="#panel-other">Professional(s)</a></li>
-                  <li class="tabs-title invisible" id="hidden-close-all-tab"><a href="#close-all"></a></li>
                 </ul>
                 <div class="tabs-content" data-tabs-content="phone-book-tabs">
                   <div class="tabs-panel is-active" id="panel-all">
+                    <div class="row">
+                      <div class="large-12 small-2 columns locations">
+                        <section>
+                          <span class="location"><strong>Location</strong></span><br/>
+                          <span><strong>T</strong> 123.456.7890</span><br/>
+                          <span><strong>Ext</strong> 123456</span><br/>
+                          <span><strong>F</strong> 123.456.7890</span><br/>
+                          <span><strong>Flr:</strong> 45</span><br/>
+                          <span><strong>Room #:</strong> N/A</span>                      
+                        </section>           
+                        <section>
+                          <span class="location"><strong>Location</strong></span><br/>
+                          <span><strong>T</strong> 123.456.7890</span><br/>
+                          <span><strong>Ext</strong> 123456</span><br/>
+                          <span><strong>F</strong> 123.456.7890</span><br/>
+                          <span><strong>Flr:</strong> 45</span><br/>
+                          <span><strong>Room #:</strong> N/A</span>                      
+                        </section>
+                        <section>
+                          <span class="location"><strong>Location</strong></span><br/>
+                          <span><strong>T</strong> 123.456.7890</span><br/>
+                          <span><strong>Ext</strong> 123456</span><br/>
+                          <span><strong>F</strong> 123.456.7890</span><br/>
+                          <span><strong>Flr:</strong> 45</span><br/>
+                          <span><strong>Room #:</strong> N/A</span>                      
+                        </section>                         
+                      </div>
+                    </div>
                     <section>
-                      <span><strong>Location</strong></span><br/>
-                      <span>Role | Office</span><br/>
-                      <span>123.456.7890</span>
-                      <span>Role | Office</span><br/>
-                      <span>123.456.7890</span>                      
-                    </section>
-                    <section>
-                      <span>First & Last Name</span><br/>
+                      <span><strong>E</strong> <a href="mailto:test@test.com">test@test.com</a></span><br/>
                     </section>
                    <section>
-                      <span><strong>Location</strong></span><br/>
-                      <span>Role | Office</span><br/>
-                      <span>123.456.7890</span>
-                    </section>                    
+                      <span><strong>Time Keeper #:</strong> 21345</span><br/>
+                      <span><strong>Initials:</strong> EL</span><br/>
+                      <span><strong>Jurisdiction, Year of Call:</strong> N/A</span><br/>
+                      <span><strong>Comm. for Oaths:</strong> N/A</span>
+                    </section> 
+                    <section>
+                      <span><strong>Focus Group(s):</strong> N/A</span><br/>
+                      <span><strong>Committee(s):</strong> N/A</span>
+                    </section>  
                   </div>
                   <div class="tabs-panel" id="panel-national">
                     About Me
                   </div>
                   <div class="tabs-panel" id="panel-department">
                     Placeholder
+                  </div>       
+                </div>                
+              </div>
+              <div class="large-4 columns professionals">
+                <div class="tabs-panel-permanent">
+                  Professional(s)
+                </div> 
+                <div class="content">
+                  <div class="professional">
+                    <span class="name">Marie-Claude Lassiseraye Mathieu</span><br/>
+                    <span>Toronto</span><br/>
+                    <span>Ext 3345</span><br/>
+                    <span>test@test.com</span>                    
                   </div>
-                  <div class="tabs-panel" id="panel-other">
-                    Professional(s)
-                  </div>        
+                  <div class="professional">
+                    <span class="name">Test Mathieu</span><br/>
+                    <span>Toronto</span><br/>
+                    <span>Ext 3345</span><br/>
+                    <span>test@test.com</span>                    
+                  </div>
+                  <div class="professional">
+                    <span class="name">Firstname Lastname</span><br/>
+                    <span>Toronto</span><br/>
+                    <span>Ext 3345</span><br/>
+                    <span>test@test.com</span>                    
+                  </div>   
+                  <div class="professional">
+                    <span class="name">Firstname Lastname</span><br/>
+                    <span>Toronto</span><br/>
+                    <span>Ext 3345</span><br/>
+                    <span>test@test.com</span>                    
+                  </div>                                                     
                 </div>
               </div>
             </div>
