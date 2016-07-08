@@ -9,6 +9,14 @@
     label:last-of-type {
       margin-right: 0;
     }
+    .large-1 {
+      width: 102px;
+    }
+    .end {
+      label {
+        width: 100%;
+      }
+    }
   }
   .search-filter-container {
     margin-bottom: 20px; 
