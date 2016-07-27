@@ -97,6 +97,9 @@
       background-color: $light-blue;
       color: $medium-gray;
     }
+    .columns:last-child label {
+      margin-right: 0;
+    }
     .menu-sort {
       background-color: $light-blue;
       margin-right: 2px;
@@ -128,6 +131,9 @@
   }
   .mini-container-b {
     margin-bottom: 15px;
+    &.promoted-result {
+      background-color: $gray;
+    }
     .content {
       padding: 1.2rem 1rem 1rem 1rem;
       img {
