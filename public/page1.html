@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/app.css">
+    <!-- Joyride -->
+    <link rel="stylesheet" href="css/joyride-2.1.css">
   </head>
-  <body>
+  <body>   
 
     <div class="top-bar">
       <div class="row">
@@ -29,7 +31,7 @@
         </div>
       </div>
       <div class="primary-search row">
-        <div class="input-group">
+        <div class="input-group" id="search-bar">
           <input class="input-group-field" type="text" placeholder="Search">
           <span class="input-group-label"><i class="fi-magnifying-glass button"></i></span>
           <div class="input-group-button">
@@ -459,10 +461,42 @@
       </div>
     </div>  
 
+    <!-- Joyride Tip Content -->
+    <ol id="joyRideTipContent">
+      <li data-id="primary-top-menu" data-text="Next" class="stop-1" data-options="tipPosition:left;">
+        <h2>Stop #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ducimus neque, temporibus, labore, porro excepturi libero fugit aspernatur modi ad saepe facilis nesciunt accusamus ea praesentium pariatur nihil enim voluptatum.</p>
+      </li>
+      <li data-id="search-bar" data-button="Next" class="stop-2">
+        <h2>Stop #2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nihil, debitis, quia porro dolorem asperiores omnis, animi necessitatibus quasi minus id quo ex quod molestias eaque hic dolor veniam ipsam!</p>
+      </li>
+      <li data-id="secondary-top-menu" data-button="Next" class="stop-3">
+        <h2>Stop #3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime libero reiciendis corporis ipsam, consectetur, nisi accusamus. Temporibus magnam sit, ipsam consectetur! Perspiciatis, rerum repellendus, necessitatibus distinctio cumque consequatur qui non.</p>
+      </li>
+    </ol>    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/what-input.js"></script>
     <script src="js/foundation.js"></script>
     <script src="js/app.js"></script>
+    <!-- Run the plugin -->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/modernizr.mq.js"></script>
+    <script type="text/javascript" src="js/jquery.joyride-2.1.js"></script>
+    <script>
+      $(window).load(function() {
+        $('#joyRideTipContent').joyride({
+          autoStart: true,
+          modal:true,
+          expose: true,
+          postExposeCallback: function(index, tip) {
+            $('.joyride-expose-wrapper').addClass("step-" + (index + 1) + "-exposed");
+          }
+        });
+      });
+    </script>    
 
   </body>
 </html>
